@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" width="500" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="180.403" y1="104.853" x2="180.403" y2="122.252" id="gradient-0" gradientTransform="matrix(1.962773, 0, 0, 5.366485, -118.13232, -548.214888)">
+      <stop offset="0" style="stop-color: rgb(174, 81, 255);"/>
+      <stop offset="1" style="stop-color: rgb(125, 127, 255);"/>
+    </linearGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="199.553" cy="226.551" r="95.158" id="gradient-1" gradientTransform="matrix(1.74733, 0, 0, 4.738083, -75.354378, -702.748154)" spreadMethod="reflect">
+      <stop offset="0" style="stop-color: rgb(0, 234, 255);"/>
+      <stop offset="1" style="stop-color: rgba(123, 0, 255, 0.85);"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="161.575" cy="-209.234" r="64.705" id="gradient-3" gradientTransform="matrix(3.135245, 0, 0, 5.139712, -205.514389, 658.744075)">
+      <stop offset="0" style="stop-color: rgb(180, 93, 255);"/>
+      <stop offset="1" style="stop-color: rgb(116, 118, 255);"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="199.553" cy="226.551" r="95.158" id="gradient-2" gradientTransform="matrix(2.41587, -0.000001, -0.000003, 3.068691, 96.847803, 208.490752)" spreadMethod="reflect">
+      <stop offset="0" style="stop-color: rgb(0, 234, 255);"/>
+      <stop offset="1" style="stop-color: rgba(123, 0, 255, 0.85);"/>
+    </radialGradient>
+  </defs>
+  <path d="M 63.678 38.761 Q 74.193 14.486 168.827 38.761 L 343.535 83.576 Q 438.169 107.851 333.02 107.851 L 138.9 107.851 Q 33.751 107.851 44.266 83.576 Z" style="stroke: rgb(236, 0, 0); paint-order: stroke; stroke-linejoin: round; stroke-linecap: round; mix-blend-mode: multiply; fill: url(#gradient-0); stroke-dasharray: 1px, 4px; stroke-dashoffset: 48px; stroke-opacity: 0;" bx:shape="triangle 33.751 14.486 404.418 93.365 0.1 0.26 1@4e6b5e2b" bx:origin="0.524326 0.405857"/>
+  <path d="M 93.858 201.176 Q 109.116 167.731 211.226 201.176 L 347.373 245.769 Q 449.484 279.214 332.116 279.214 L 175.624 279.214 Q 58.256 279.214 73.514 245.769 Z" style="stroke: rgb(0, 0, 0); fill: url(#gradient-1); paint-order: fill; stroke-opacity: 0;" bx:shape="triangle 58.256 167.731 391.228 111.483 0.13 0.3 1@7cbb2dc9" bx:origin="0.365366 0.5"/>
+  <path d="M 80.203 -455.484 Q 88.812 -476.543 203.193 -455.484 L 414.359 -416.607 Q 528.74 -395.548 405.749 -395.548 L 178.69 -395.548 Q 55.699 -395.548 64.308 -416.607 Z" style="stroke: rgb(236, 0, 0); paint-order: stroke; stroke-linejoin: round; stroke-linecap: round; mix-blend-mode: multiply; stroke-dasharray: 1px, 4px; stroke-dashoffset: 48px; fill: url(#gradient-3); stroke-opacity: 0;" transform="matrix(1, 0, 0, -1, 0, 0)" bx:shape="triangle 55.699 -476.543 473.041 80.995 0.07 0.26 1@66a6222b" bx:origin="0.524326 0.405857"/>
+  <path d="M 470.899 793.926 Q 552.036 772.266 633.173 793.926 L 741.356 822.807 Q 822.493 844.467 660.219 844.467 L 443.853 844.467 Q 281.579 844.467 362.716 822.807 Z" style="stroke: rgb(0, 0, 0); paint-order: fill; fill: url(#gradient-2); stroke-miterlimit: 1; stroke-opacity: 0;" transform="matrix(0.079008, 0.996874, -0.976037, 0.34191, 830.450134, -577.509705)" bx:shape="triangle 281.579 772.266 540.914 72.201 0.5 0.3 1@8301d521" bx:origin="0.365366 0.5"/>
+</svg>

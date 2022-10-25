@@ -1,0 +1,48 @@
+/* Loop random gradient animation infinite for gradientAnimation ID */
+#gradientAnimation {
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	animation-name: backgroundColorPalette;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+}
+@keyframes backgroundColorPalette {
+	0% {
+		background: #ee6055;
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+	25% {
+		background: #60d394;
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+	50% {
+		background: #aaf683;
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+	75% {
+		background: #ffd97d;
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+	100% {
+		background: #ff9b85;
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind typography;

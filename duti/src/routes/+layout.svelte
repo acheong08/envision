@@ -1,6 +1,6 @@
 <!-- Layout for the index page. Uses daisyUI for CSS -->
 <script>
-	import './styles.css';
+	import '$lib/css/styles.css';
 	import Header from './Header.svelte'
 	import Footer from './Footer.svelte';
 </script>

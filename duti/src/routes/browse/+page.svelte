@@ -1,8 +1,7 @@
 <script lang="ts">
-	import { loginStatus } from '$lib/ts/store';
+	import { loginStatus } from '$lib/ts/stores/status';
 	import { auth, db } from '$lib/ts/firebase';
-	import { getDoc, doc, collection, query, getDocs } from 'firebase/firestore';
-	import { onMount } from 'svelte';
+	import { collection, query, getDocs } from 'firebase/firestore';
 
 	let signedIn: boolean = false;
 
@@ -40,6 +39,8 @@
 						description={model.description}
 						preview={model.preview}
 						tags={model.tags}
+						source={model.source}
+						readme={model.readme}
 					/>
 				</div>
 			{/each}

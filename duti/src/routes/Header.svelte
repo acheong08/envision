@@ -24,7 +24,7 @@
 	// Auth
 	import {signInWithPopup, signOut } from 'firebase/auth';
 	import {provider, auth} from '$lib/ts/firebase';
-	import { loginStatus } from '$lib/ts/store'
+	import { loginStatus } from '$lib/ts/stores/status'
 
 	let signedIn: boolean;
 	loginStatus.subscribe(value => {

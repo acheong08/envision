@@ -20,7 +20,7 @@
 					The (soon to be) ultimate index of textual inversion, Hypernetworks, and Embeddings.
 				</p>
 				<a href="/browse"><button class="btn btn-primary m-1">Browse</button></a>
-				<button class="btn btn-accent m-1 btn-outline">Contribute</button>
+				<a href="/contribute"><button class="btn btn-accent m-1 btn-outline">Contribute</button></a>
 			</div>
 		</div>
 	</div>

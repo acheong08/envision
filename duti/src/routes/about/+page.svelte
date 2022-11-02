@@ -1,48 +1,8 @@
-
-<div class="divider" id="about"/>
+<div class="divider" id="about" />
 
 <div class="container my-20 mx-10">
 	<div>
-		<article class="prose text-xl">
-			<h1>What is Envision?</h1>
-			<p>
-				Envision is a community driven index of textual inversion models for Stable Diffusion and
-				derivatives.
-			</p>
-			<h2>Why textual inversion?</h2>
-			<p>
-				The training of the main model is slow and generic. It thus lacks the ability to generate
-				less popular and more specific styles and prompts. With textual inversion, users are able to
-				use the power of the main model with the added benefits of specific subjects and styles.
-			</p>
-			<h2>The intent</h2>
-			<p>
-				Of course, this wasn't created out of the goodness of my heart. This project was born out of
-				a desire for easy access to new anime characters and artistic styles that the main model has
-				not been trained on yet.
-			</p>
-			<h2>For "real" artists</h2>
-			<p>
-				I understand some of you may be freaked out that AI might take over your work. However, I
-				say that AI has created greater opportunities for artists.
-			</p>
-			<p>
-				One of my ideas is to create a marketplace for artists to sell their characters and styles
-				to the community. After all, that is what makes each artist unique. I will attempt to
-				moderate the marketplace to ensure that only true authors are able to sell their work and
-				prevent plagiarism.
-			</p>
-			<h4>Some ideas</h4>
-			<ul>
-				<li>Allow artists to write or select custom licensing terms</li>
-				<li>Require verification of authorship</li>
-				<li>
-					Alternative marketplace for collaboration between less technical artists and AI trainers
-				</li>
-			</ul>
-		</article>
-
-		<div class="divider" />
+		<div class="divider" id="prompt-bullshit" />
 
 		<article class="prose text-lg">
 			<h1>The Bullshit of Prompt Selling</h1>
@@ -74,6 +34,17 @@
 					provides optimal results
 				</li>
 			</ul>
+		</article>
+	</div>
+	<div class="divider" id="why-login" />
+	<div>
+		<article class="prose">
+			<h1>Why do we require logging in to search models?</h1>
+			<p class="font-bold">TL;DR: I am fucking poor and can't afford too many API calls.</p>
+			<p>
+				For this project, I am using firebase for authentication and hosting. Google has set a limit
+				on the number of calls I can make per day and it costs a ton to make more.
+			</p>
 		</article>
 	</div>
 </div>

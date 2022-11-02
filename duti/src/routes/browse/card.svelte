@@ -5,11 +5,18 @@
 	export let tags: string[];
 	export let source: string;
     export let readme: string;
+	export let download: string;
+	export let author: string;
 
     function clickHandler() {
         localStorage.setItem('model_title', title)
+		// Convert tags array to json string
+		localStorage.setItem('model_tags', JSON.stringify(tags))
         localStorage.setItem('model_source', source);
         localStorage.setItem('model_readme', readme);
+		localStorage.setItem('model_download', download);
+		localStorage.setItem('model_description', description);
+		localStorage.setItem('model_author', author);
         // open link to model page
         window.location.href = '/browse/model';
     }

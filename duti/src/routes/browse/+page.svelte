@@ -41,11 +41,17 @@
 						tags={model.tags}
 						source={model.source}
 						readme={model.readme}
+						download={model.download}
+						author={model.author}
 					/>
 				</div>
 			{/each}
 		{:catch error}
 			<div>Error: {error.message}</div>
 		{/await}
+	{:else}
+		<div class="text-center">
+			<h1 class="text-4xl">Please sign in to view models</h1>
+		</div>
 	{/if}
 </div>

@@ -26,11 +26,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@svelteuidev/composables": "^0.7.3",
-		"@svelteuidev/core": "^0.7.3",
-		"@svelteuidev/motion": "^0.7.3",
-		"@svelteuidev/prism": "^0.7.3",
+		"@bytemd/plugin-gfm": "^1.17.4",
 		"@tailwindcss/typography": "^0.5.7",
+		"bytemd": "^1.17.4",
 		"daisyui": "^2.31.0",
 		"firebase": "^9.12.1",
 		"firebaseui": "^6.0.1",

@@ -1,11 +1,13 @@
 <script lang="ts">
-	export let value: string;
+	export let files: any = [];
 </script>
 
 <div class="">
 	<div class="mb-3 w-96">
 		<input
-			bind:value
+			bind:files
+            accept="image/*"
+            type="file"
 			class="form-control
                 block
                 w-full
@@ -20,7 +22,6 @@
                 ease-in-out
                 m-0
                 focus:border-blue-600 focus:outline-none"
-			type="file"
 			id="formFile"
 		/>
 	</div>

@@ -9,7 +9,7 @@
 		const download = localStorage.getItem('model_download');
 		const description = localStorage.getItem('model_description');
 		const author = localStorage.getItem('model_author');
-		return { title, readme, source, download, description, author};
+		return { title, readme, source, download, description, author };
 	}
 </script>
 
@@ -21,8 +21,8 @@
 			<div>
 				<article class="prose m-5">
 					<h1>{model.title}</h1>
+					<SvelteMarkdown source={model.readme} />
 				</article>
-				<SvelteMarkdown source={model.readme} />
 			</div>
 			<div>
 				<div class="card w-96 bg-neutral text-neutral-content">

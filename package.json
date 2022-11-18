@@ -27,6 +27,7 @@
 	"type": "module",
 	"dependencies": {
 		"@bytemd/plugin-gfm": "^1.17.4",
+		"@sveltejs/adapter-static": "^1.0.0-next.48",
 		"@tailwindcss/typography": "^0.5.7",
 		"bytemd": "^1.17.4",
 		"daisyui": "^2.31.0",

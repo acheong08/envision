@@ -50,7 +50,6 @@
 				where_clauses.push(where(`search.${word}`, '==', true));
 			});
 			q = await query(db_ref, orderBy('__name__'), limit(12), ...where_clauses);
-			console.log(q);
 		}
 		const querySnapshot = await getDocs(q);
 		models = querySnapshot.docs.map((doc) => doc.data());

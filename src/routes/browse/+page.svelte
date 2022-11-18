@@ -12,20 +12,10 @@
     limitToLast,
     where,
   } from "firebase/firestore";
+  import { onMount } from "svelte";
 
-  let signedIn: boolean = false;
-
-  loginStatus.subscribe((value) => {
-    signedIn = value;
-  });
-
-  auth.onAuthStateChanged(async (user) => {
-    if (user) {
-      loginStatus.set(true);
-      getModels();
-    } else {
-      loginStatus.set(false);
-    }
+  onMount(async () => {
+    getModels();
   });
 
   let search: string;

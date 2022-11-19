@@ -121,8 +121,6 @@
 </script>
 
 <div class="container mx-8 my-10">
-  <div class="grid grid-cols-3 gap-3">
-    <div class="col-span-2">
       <h1 class="text-4xl">Submit your model</h1>
       <p>View terms and conditions</p>
       <br />
@@ -162,9 +160,6 @@
         maxlength={2000}
         bind:value={model_download}
       />
-    </div>
-    <div>Empty for now</div>
-  </div>
   <h2 class="text-2xl">Readme</h2>
   <div class="m-5 prose min-w-full">
     <MarkdownEditor

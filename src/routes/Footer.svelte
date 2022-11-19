@@ -9,7 +9,7 @@
     <div>
       <span class="footer-title">Social</span> 
       <div class="grid grid-flow-col gap-4">
-        <a href="https://github.com/acheong08/">
+        <a href="https://github.com/acheong08/envision">
             <svg
                 width="50"
                 height="50"

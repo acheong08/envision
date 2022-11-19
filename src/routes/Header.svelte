@@ -73,12 +73,12 @@
       <li>
         <!-- Mobile menu -->
         <div class="flex md:hidden dropdown dropdown-hover dropdown-end p-0">
-          <div
+          <label
             tabindex="0"
             class="m-1 btn btn-ghost btn-lg text-sm rounded-btn"
           >
             ...
-          </div>
+          </label>
           <ul
             tabindex="0"
             class="p-2 shadow menu dropdown-content bg-neutral rounded-box w-52 top-20"

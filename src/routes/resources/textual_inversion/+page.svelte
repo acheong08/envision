@@ -5,7 +5,7 @@
 <div class="container mx-auto m-10 mx-10">
 	<article class="prose min-w-full">
 		<h1 class="flex justify-center">Textual Inversion</h1>
-		<grid class="grid grid-cols-2 gap-2">
+		<grid class="grid grid-cols-1 md:grid-cols-2 gap-2">
 			<div>
 				<h2>What is Textual Inversion?</h2>
 				<p class="text-lg">
@@ -23,7 +23,7 @@
 			</div>
 		</grid>
 		<h2 class="flex justify-center">Hypernetworks and Embeddings</h2>
-		<div class="grid grid-cols-2 gap-2">
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-2">
 			<div>
 				<h3>Embeddings</h3>
 				<p>

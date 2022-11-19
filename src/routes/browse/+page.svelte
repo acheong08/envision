@@ -107,11 +107,11 @@
     </button>
   </div>
   <div
-    class="grid gap-4 m-8 auto-rows-auto grid-cols-3 grid-flow-row"
+    class="mx-5 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 justify-center"
     id="model-list"
   >
     {#each models as model}
-      <div>
+      <div class="flex">
         <Card
           title={model.title}
           description={model.description}

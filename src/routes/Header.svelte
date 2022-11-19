@@ -72,7 +72,7 @@
     <ul class="menu menu-horizontal p-1 menu-sm">
       <li>
         <!-- Mobile menu -->
-        <div class="flex md:hidden dropdown dropdown-end p-0">
+        <div class="flex md:hidden dropdown dropdown-hover dropdown-end p-0">
           <div
             tabindex="0"
             class="m-1 btn btn-ghost btn-lg text-sm rounded-btn"

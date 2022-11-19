@@ -1,5 +1,5 @@
 <script lang="ts">
-	import AI_art from '$lib/images/radioactive_world.png';
+	import AI_art from '$lib/images/radioactive_world.webp';
 </script>
 
 <svelte:head>

@@ -88,6 +88,8 @@
     tags.forEach((tag) => {
       tags_obj[tag] = true;
     });
+    /// Author ///
+    const model_author: string = auth.currentUser?.displayName!;
     ///// Upload model to Firebase /////
     // Create model object
     const model = {
@@ -100,12 +102,13 @@
       readme: model_readme,
       download: model_download,
       uid: auth.currentUser!.uid,
-      author: auth.currentUser!.displayName,
+      author: model_author,
     };
     // Upload model to Firebase
     await addDoc(collection(db, "models"), model);
     // Save model into local storage
     localStorage.setItem("model_title", model_title);
+    localStorage.setItem("model_author", model_author)
     localStorage.setItem("model_description", model_description);
     localStorage.setItem("model_preview", preview_url);
     localStorage.setItem("model_tags", model_tags);

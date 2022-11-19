@@ -76,9 +76,10 @@
 		///// Model tags /////
 		// Split tags by spaces
 		const tags = model_tags.split(' ');
-		// Map tags to object 'tag': true
-		const tags_obj = tags.map((tag) => {
-			return { [tag]: true };
+		// Map tags to object 'tag': true (not an array)
+		const tags_obj: any = {};
+		tags.forEach((tag) => {
+			tags_obj[tag] = true;
 		});
 		///// Upload model to Firebase /////
 		// Create model object

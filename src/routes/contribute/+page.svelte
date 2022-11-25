@@ -86,7 +86,8 @@
     // Map tags to object 'tag': true (not an array)
     const tags_obj: any = {};
     tags.forEach((tag) => {
-      tags_obj[tag] = true;
+      // Create an object mapping each tag to another object with two keys: duplicates: 0 and users: auth.currentUser.uid
+      tags_obj[tag] = { duplicates: 0, users: [auth.currentUser?.uid] };
     });
     /// Author ///
     const model_author: string = auth.currentUser?.displayName!;
@@ -96,7 +97,6 @@
       title: model_title,
       description: model_description,
       preview: preview_url,
-      tags: tags,
       search: tags_obj,
       source: model_source,
       readme: model_readme,

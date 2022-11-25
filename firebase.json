@@ -8,7 +8,7 @@
         "headers": [
           {
             "key": "Content-Security-Policy",
-            "value": "default-src 'self' 'unsafe-inline' https://*.googleapis.com https://diffusion-561b0.firebaseapp.com; script-src 'self' https://cdn.firebase.com https://*.firebaseio.com https://apis.google.com https://*.googleapis.com 'unsafe-inline'; object-src 'self'; img-src 'self' https://*;"
+            "value": "default-src 'self' 'unsafe-inline' https://*.googleapis.com https://diffusion-561b0.firebaseapp.com; script-src 'self' https://cdn.firebase.com https://*.firebaseio.com https://apis.google.com https://*.googleapis.com 'unsafe-inline'; object-src 'self'; img-src 'self' https://*; connect-src https://images.duti.tech;"
           },
           {
             "key": "X-Frame-Options",

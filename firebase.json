@@ -12,7 +12,7 @@
         "headers": [
           {
             "key": "Content-Security-Policy",
-            "value": "default-src 'self'; script-src 'self' https://cdn.firebase.com https://*.firebaseio.com 'unsafe-inline'; object-src 'self'; img-src 'self' https://*;"
+            "value": "default-src 'self' 'unsafe-inline'; script-src 'self' https://cdn.firebase.com https://*.firebaseio.com 'unsafe-inline'; object-src 'self'; img-src 'self' https://*;"
           },
           {
             "key": "X-Frame-Options",

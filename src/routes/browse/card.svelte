@@ -2,11 +2,14 @@
 	export let title: string;
 	export let description: string;
 	export let preview: string;
-	export let tags: string[];
+	export let tags: object;
 	export let source: string;
     export let readme: string;
 	export let download: string;
 	export let author: string;
+
+	// Get fields of tags and put them in an array (limit 10)
+	$: tags_list = Object.keys(tags).slice(0, 10);
 
     function clickHandler() {
         localStorage.setItem('model_title', title)
@@ -31,7 +34,7 @@
 			</h2>
 			<p>{description}</p>
 			<div class="card-actions justify-end overflow-auto">
-				{#each tags as tag}
+				{#each tags_list as tag}
 					<div class="badge badge-outline">{tag}</div>
 				{/each}
 			</div>

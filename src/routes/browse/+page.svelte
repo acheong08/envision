@@ -1,6 +1,5 @@
 <script lang="ts">
-  import { loginStatus } from "$lib/ts/stores/status";
-  import { auth, db } from "$lib/ts/firebase";
+  import { db } from "$lib/ts/firebase";
   import {
     collection,
     query,
@@ -25,22 +24,28 @@
   let models: any = [];
   let lastVisible: any = null;
 
+  function generate_where_clause(tags: string): any {
+    if (tags == "" || tags == " " || tags == undefined || tags == null) {
+      return [];
+    }
+    let tags_array = tags.split(" ");
+    let where_clause: any = [];
+    tags_array.forEach((tag) => {
+      where_clause.push(where(`search.${tag}.duplicates`, "<=", 0));
+    });
+    return where_clause;
+  }
+
   async function getModels() {
     // Build search query from search string (if any)
     // Get models collection from firestore ordered by document id
     let q;
-    if (search == undefined || search == "") {
-      q = await query(db_ref, orderBy("__name__"), limit(12));
-    } else {
-      // Split search string into array of words
-      let search_words: string[] = search.split(" ");
-      let where_clauses: any[] = [];
-      search_words.forEach((word) => {
-        // Add where clause for each word
-        where_clauses.push(where(`search.${word}`, "==", true));
-      });
-      q = await query(db_ref, orderBy("__name__"), limit(12), ...where_clauses);
-    }
+    q = await query(
+      db_ref,
+      // orderBy("title"),
+      limit(12),
+      ...generate_where_clause(search)
+    );
     const querySnapshot = await getDocs(q);
     models = querySnapshot.docs.map((doc) => doc.data());
     // Get document id of last model
@@ -52,9 +57,10 @@
     // Get models collection from firestore ordered by document id
     const q = await query(
       db_ref,
-      orderBy("title"),
+      // orderBy("title"),
       startAfter(lastVisible.id),
-      limit(12)
+      limit(12),
+      ...generate_where_clause(search)
     );
     const querySnapshot = await getDocs(q);
     models = querySnapshot.docs.map((doc) => doc.data());
@@ -71,9 +77,10 @@
     // Get models collection from firestore ordered by document id
     const q = await query(
       db_ref,
-      orderBy("title"),
+      // orderBy("title"),
       endAt(lastVisible.id),
-      limitToLast(12)
+      limitToLast(12),
+      ...generate_where_clause(search)
     );
     const querySnapshot = await getDocs(q);
     // If only one model is returned, then we are at the beginning of the collection
@@ -116,7 +123,7 @@
           title={model.title}
           description={model.description}
           preview={model.preview}
-          tags={model.tags}
+          tags={model.search}
           source={model.source}
           readme={model.readme}
           download={model.download}
